@@ -6,7 +6,7 @@ public class YorN {
 		String yesOrNo = "y";
 
 		while(yesOrNo.equalsIgnoreCase("y")) { 
-      //equals is case Sensitive whereas equalsIgnoreCase not
+      			//equals is case Sensitive whereas equalsIgnoreCase not
 			System.out.println("Hi!");
 			System.out.println("Continue? Y or N : ");
 			yesOrNo = myInput.nextLine();
