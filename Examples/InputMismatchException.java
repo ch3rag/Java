@@ -15,16 +15,16 @@ public class InputMismatch {
 
 	public static int checkValidAge() {
 
-	try {
-		return myInput.nextInt();
-	} catch (InputMismatchException e) {
-		System.out.println("Invalid Age!");
-		System.out.println(e.getMessage()); //NULL
-		System.out.println(e.toString());	
-		e.printStackTrace();
-		return 0;
+		try {
+			return myInput.nextInt();
+		} catch (InputMismatchException e) {
+			System.out.println("Invalid Age!");
+			System.out.println(e.getMessage()); //NULL
+			System.out.println(e.toString());	
+			e.printStackTrace();
+			return 0;
 
-	}
+		}
 	}
 
 }
