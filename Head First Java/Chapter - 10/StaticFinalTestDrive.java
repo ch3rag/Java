@@ -12,13 +12,13 @@ class StaticFinalTestDrive {
 class MyClass {
 	static int instanceCount = 0;
 	static int myVar;
-	static final int myConstant = 0;
+	static final int MYCONSTANT = 0;
 	//Or
-	static final int myConstantTwo;
+	static final int MYCONSTANTTWO;
 	//Then initailize in static block
 
 	static {
-		myConstantTwo = 5;
+		MYCONSTANTTWO = 5;
 		myVar = 99;
 	}
 
