@@ -37,6 +37,7 @@ public class BeatBox {
 		GridLayout buttonBoxGrid = new GridLayout(4, 1);
 		buttonBoxGrid.setVgap(10);
 		JPanel buttonBox = new JPanel(buttonBoxGrid);
+		buttonBox.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
 		JButton start = new JButton("Start");
 		start.addActionListener(new startListener());
 		
@@ -51,12 +52,6 @@ public class BeatBox {
 		JButton tempoDown = new JButton("Tempo Down");
 		tempoDown.addActionListener(new tempoDownListner());
 		
-		stop.setAlignmentX(Component.CENTER_ALIGNMENT);
-		tempoUp.setAlignmentX(Component.CENTER_ALIGNMENT);	
-		tempoDown.setAlignmentX(Component.CENTER_ALIGNMENT);
-		start.setAlignmentX(Component.CENTER_ALIGNMENT);			
-
-
 		buttonBox.add(start);
 		buttonBox.add(stop);
 		buttonBox.add(tempoUp);
